@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Boostrao V4.5 Timepicker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/boostrap.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css"/>
+        <link rel="stylesheet" href="assets/css/timepicker.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- <h1>Boostrap 4.5 Timepicker</h1> -->
+        <div class="row">
+            <div class="col-md-12 text-center bg-light p-5">
+                <h1>Boostrap V4.5 Date & Time Picker</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Date</label>
+                    <input type="text" class="form-control form-control-sm  datetimepicker-input" id="txtDateOfSample" data-toggle="datetimepicker" data-target="#txtDateOfSample" placeholder="DD/MM/YYYY" tabindex="3" name="txtDateOfSample" required/> 
+                    <small id="emailHelp" class="form-text text-muted">Date Format: DD/MM/YYYY</small>
+                  </div>
+            </div>
+            <div class="col-md"></div>
+        </div>
+        <div class="row">
+            <div class="col-md"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Time</label>
+                    <input type="text" class="form-control form-control-sm  datetimepicker-input" id="txtTime" data-toggle="datetimepicker" data-target="#txtTime" placeholder="hh:mm AM/PM" required tabindex="4" name="txtTime"/>
+                    <small id="emailHelp" class="form-text text-muted">Date Format: hh:mm AM/PM</small>
+                  </div>
+            </div>
+            <div class="col-md"></div>
+        </div>
+       
+        <script src="assets/js/datepickerjquery.js"></script>
+        <script src="assets/js/tether.min.js"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="assets/js/boostrap_timepicker.js"></script>
+        <script>
+           var date = new Date();
+           var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+           $('#txtDateOfSample').datetimepicker({
+              format: 'DD/MM/YYYY',
+              maxDate: new Date(today),
+           });
+  
+           $('#txtTime').datetimepicker({
+              format: 'LT',
+           });
+           $("#txtDateOfSample").val('');
+        </script>
+        <!-- jQuery v3.5.1  -->
+        <script src="assets/js/jqyery.js"></script> 
+        <!-- Bootstrap v4.5.2 (https://getbootstrap.com/) -->
+        <script src="assets/js/boostrap.js"></script>
+    </body>
+</html>

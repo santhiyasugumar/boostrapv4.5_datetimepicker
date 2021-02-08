@@ -1,0 +1,9 @@
+.nav-link {
+    cursor: pointer;
+ }
+ .bootstrap-datetimepicker-widget table td, .bootstrap-datetimepicker-widget table th {
+    border: 0px solid white;
+ }
+ body {
+     overflow-x: hidden;
+ }
